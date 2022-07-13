@@ -10,13 +10,13 @@ namespace MaxsuIFrame
 			SKSE::AllocTrampoline(1 << 4);
 			auto& trampoline = SKSE::GetTrampoline();
 
-			REL::Relocation<std::uintptr_t> ProcessHitFunc{ REL::ID(37673) };
+			REL::Relocation<std::uintptr_t> ProcessHitFunc{ REL::ID(38627) };
 			_IsGhost = trampoline.write_call<5>(ProcessHitFunc.address() + 0x45, IsGhost);
 
-			REL::Relocation<std::uintptr_t> NPCInvulnerableBase{ REL::ID(36715) };
+			REL::Relocation<std::uintptr_t> NPCInvulnerableBase{ REL::ID(37725) };
 			_IsGhost = trampoline.write_call<5>(NPCInvulnerableBase.address() + 0x2A, IsGhost);
 
-			REL::Relocation<std::uintptr_t> PCInvulnerableBase{ REL::ID(39428) };
+			REL::Relocation<std::uintptr_t> PCInvulnerableBase{ REL::ID(40504) };
 			_IsGhost = trampoline.write_call<5>(PCInvulnerableBase.address() + 0x14, IsGhost);
 		}
 

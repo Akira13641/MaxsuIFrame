@@ -1,0 +1,9 @@
+{
+  "name": "maxsuiframe",
+  "version": "1",
+  "dependencies": [
+    "boost-stl-interfaces",
+    "rsm-binary-io",
+    "spdlog"
+  ]
+}
