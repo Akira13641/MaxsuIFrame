@@ -5,7 +5,6 @@ set(SOURCE_FILES
   "${SOURCE_DIR}/main.cpp"
   "${SOURCE_DIR}/PCH.h"
   "${SOURCE_DIR}/Hooks.h"
-  "${SOURCE_DIR}/SimpleIni.h"
 )
 
 source_group(TREE "${ROOT_DIR}" FILES ${SOURCE_FILES})
