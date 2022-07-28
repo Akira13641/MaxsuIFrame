@@ -28,9 +28,9 @@ namespace MaxsuIFrame
 		{
 			logger::debug("IsGhost Trigger!");
 
-			bool iframeActive = false, iframeSate = false;
+			bool iframeActive = false, iframeState = false;
 
-			if (a_actor->GetGraphVariableBool("bIframeActive", iframeActive) && iframeActive && a_actor->GetGraphVariableBool("bInIframe", iframeSate) && iframeSate) {
+			if (a_actor->GetGraphVariableBool("bIframeActive", iframeActive) && iframeActive && a_actor->GetGraphVariableBool("bInIframe", iframeState) && iframeState) {
 				logger::debug("Actor is invulnerable!");
 				return true;
 			}
