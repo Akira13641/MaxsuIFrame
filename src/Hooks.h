@@ -10,7 +10,7 @@ namespace MaxsuIFrame
 			SKSE::AllocTrampoline(1 << 4);
 			auto& trampoline = SKSE::GetTrampoline();
 
-			// previously REL::ID(37673), for SE
+			// previously `REL::ID(37673)` and `ProcessHitFunc.address() + 0x45`, for SE
 			REL::Relocation<std::uintptr_t> ProcessHitFunc{ REL::ID(38627) };
 			_IsGhost = trampoline.write_call<5>(ProcessHitFunc.address() + 0x4a8, IsGhost);
 
