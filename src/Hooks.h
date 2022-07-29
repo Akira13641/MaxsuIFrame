@@ -12,7 +12,7 @@ namespace MaxsuIFrame
 
 			// previously REL::ID(37673), for SE
 			REL::Relocation<std::uintptr_t> ProcessHitFunc{ REL::ID(38627) };
-			_IsGhost = trampoline.write_call<5>(ProcessHitFunc.address() + 0x45, IsGhost);
+			_IsGhost = trampoline.write_call<5>(ProcessHitFunc.address() + 0x4a8, IsGhost);
 
 			// previously REL::ID(36715), for SE
 			REL::Relocation<std::uintptr_t> NPCInvulnerableBase{ REL::ID(37725) };
